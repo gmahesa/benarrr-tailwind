@@ -711,6 +711,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.animate-\[slide_10s_linear_infinite\] {
+  animation: slide 10s linear infinite;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -890,6 +894,10 @@ video {
   text-align: center;
 }
 
+.font-\[\'ClashDisplay-Semibold\'\] {
+  font-family: 'ClashDisplay-Semibold';
+}
+
 .font-\[Manrope\] {
   font-family: Manrope;
 }
@@ -966,6 +974,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/* @import url("clash-display.css"); */
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2"), url("../fonts/ClashDisplay-Semibold.woff") format("woff"), url("../fonts/ClashDisplay-Semibold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0%);
@@ -976,13 +998,21 @@ video {
   }
 }
 
-.slider {
-  animation: slide 10s linear infinite;
-}
-
 .before\:content-\[\'\$\'\]::before {
   --tw-content: '$';
   content: var(--tw-content);
+}
+
+.hover\:shadow-\[0_0_50px_-2px_rgba\(5\2c 7\2c 41\2c 0\.11\)\]:hover {
+  --tw-shadow: 0 0 50px -2px rgba(5,7,41,0.11);
+  --tw-shadow-colored: 0 0 50px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-custom:hover {
+  --tw-shadow: 0px 0px 50px -2px rgba(5, 7, 41, 0.11);
+  --tw-shadow-colored: 0px 0px 50px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-xl:hover {

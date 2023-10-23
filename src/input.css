@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url("clash-display.css"); */
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2"), url("../fonts/ClashDisplay-Semibold.woff") format("woff"), url("../fonts/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0%);
@@ -10,8 +20,4 @@
   100% {
     transform: translateX(-100%);
   }
-}
-
-.slider {
-  animation: slide 10s linear infinite;
 }
